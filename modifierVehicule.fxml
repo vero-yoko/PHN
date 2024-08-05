@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="your.package.ModifierVehiculeController">
+    <Label text="Saisir l'identifiant du véhicule à modifier :"/>
+    <TextField fx:id="vehiculeIdField" promptText="Identifiant du véhicule"/>
+
+    <Label text="Saisir la nouvelle marque du véhicule :"/>
+    <TextField fx:id="nouvelleMarqueField" promptText="Nouvelle marque"/>
+
+    <Label text="Saisir la nouvelle année de fabrication du véhicule :"/>
+    <TextField fx:id="nouvelleAnneeField" promptText="Nouvelle année"/>
+
+    <Button text="Modifier" onAction="#modifierVehicule"/>
+</VBox>

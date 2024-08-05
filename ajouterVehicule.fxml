@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ajouterVehiculeController" hgap="10" vgap="10" padding="10">
+    <Label text="Saisir l'identifiant du véhicule :" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="idField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+    <Label text="Saisir la marque du véhicule :" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="marqueField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Saisir l'année de fabrication du véhicule :" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="anneeField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Button text="Ajouter" onAction="#ajouterVehicule" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+</GridPane>
